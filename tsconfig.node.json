@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/shared/components/*"],
+      "@components/*": ["./src/shared/components/*"],
+      
+      "@student/*": ["./src/features/student/*"],
+      "@enrollment/*": ["./src/features/enrollment/*"],
+      "@program/*": ["./src/features/program/*"],
+      "@course/*": ["./src/features/course/*"],
+      "@faculty/*": ["./src/features/faculty/*"],
+      "@subject/*": ["./src/features/subject/*"],
+      "@status/*": ["./src/features/status/*"],
+      "@settings/*": ["./src/features/settings/*"],
+      "@metadata/*": ["./src/features/metadata/*"],
+
+      "@ui/*": ["./src/shared/components/ui/*"],
+      "@core/*": ["./src/core/*"],
+      "@features/*": ["./src/features/*"],
+      "@lib/*": ["./src/shared/lib/*"],
+      "@hooks/*": ["./src/shared/hooks/*"],
+      "@data/*": ["./src/shared/data/*"],
+      "@types/*": ["./src/core/types/*"],
+      "@config/*": ["./src/core/api/*"],
+    }
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/shared/components",
+    "ui": "@/shared/components/ui",
+    "core": "@/core",
+    "features": "@/features",
+    "utils": "@/shared/lib/utils",
+    "lib": "@/shared/lib",
+    "hooks": "@/shared/hooks",
+    "data": "@/shared/data",
+    "types": "@/core/types",
+    "api": "@/core/api",
+
+    "enrollment": "@/features/enrollment",
+    "student": "@/features/student",
+    "program": "@/features/program",
+    "faculty": "@/features/faculty",
+    "status": "@/features/status",
+    "subject": "@/features/subject",
+    "course": "@/features/course",
+    "settings": "@/features/settings",
+    "metadata": "@/features/metadata"
+  },
+  "iconLibrary": "lucide"
+}
